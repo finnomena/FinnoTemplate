@@ -4,15 +4,16 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
+    private var viewModel: ___VARIABLE_productName:identifier___ViewModel = ___VARIABLE_productName:identifier___ViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    // MARK: User Interaction
+    // MARK: - User Interaction
 
-    // MARK: Helpers
+    // MARK: - Helpers
 
     func configure() {
-        // configure for passed data between view controller
     }
 }
