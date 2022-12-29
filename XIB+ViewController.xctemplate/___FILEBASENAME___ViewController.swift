@@ -8,6 +8,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setObservable()
+        setupUI()
     }
 
     // MARK: - User Interaction
