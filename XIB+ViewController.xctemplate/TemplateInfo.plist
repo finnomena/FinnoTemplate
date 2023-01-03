@@ -24,6 +24,25 @@
 			<key>Type</key>
 			<string>text</string>
 		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>classType</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Class Type:</string>
+			<key>Description</key>
+			<string>The type of classes to create</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>ViewController</string>
+			<key>Values</key>
+			<array>
+				<string>ViewController</string>
+				<string>ViewController+CollectionView</string>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>
