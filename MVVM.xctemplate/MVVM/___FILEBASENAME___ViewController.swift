@@ -8,6 +8,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setObservable()
+        setupUI()
     }
 
     // MARK: - User Interaction
@@ -15,5 +18,11 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     // MARK: - Helpers
 
     func configure() {
+    }
+
+    private func setObservable() {
+    }
+
+    private func setupUI() {
     }
 }

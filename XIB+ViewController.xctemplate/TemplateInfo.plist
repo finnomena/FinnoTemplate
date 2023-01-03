@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>SortOrder</key>
-	<integer>1</integer>
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Platforms</key>
@@ -20,9 +18,9 @@
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>View name:</string>
+			<string>xib and view controller name:</string>
 			<key>Description</key>
-			<string>The name of the View name</string>
+			<string>The name of xib and view controller</string>
 			<key>Type</key>
 			<string>text</string>
 		</dict>
@@ -38,13 +36,11 @@
 			<key>Type</key>
 			<string>popup</string>
 			<key>Default</key>
-			<string>MVVM</string>
+			<string>ViewController</string>
 			<key>Values</key>
 			<array>
-				<string>MVVM</string>
-				<string>ViewModel</string>
 				<string>ViewController</string>
-				<string>Model</string>
+				<string>ViewController+CollectionView</string>
 			</array>
 		</dict>
 	</array>
