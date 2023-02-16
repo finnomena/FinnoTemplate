@@ -4,7 +4,7 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
-    private var viewModel: ___VARIABLE_productName:identifier___ViewModel = ___VARIABLE_productName:identifier___ViewModel()
+    private let viewModel: ___VARIABLE_productName:identifier___ViewModel = ___VARIABLE_productName:identifier___ViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
