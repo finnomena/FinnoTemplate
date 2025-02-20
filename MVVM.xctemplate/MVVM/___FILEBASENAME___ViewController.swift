@@ -4,13 +4,15 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
-    private var viewModel: ___VARIABLE_productName:identifier___ViewModel = ___VARIABLE_productName:identifier___ViewModel()
+    private let viewModel: ___VARIABLE_productName:identifier___ViewModel = ___VARIABLE_productName:identifier___ViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setFont()
+        setText()
+        setupView()
         setObservable()
-        setupUI()
     }
 
     // MARK: - User Interaction
@@ -20,9 +22,27 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     func configure() {
     }
 
-    private func setObservable() {
+    private func setFont() {
+        // static set font
     }
 
-    private func setupUI() {
+    private func setText() {
+        // static set text
+    }
+
+    private func setupView() {
+        // static setup view
+    }
+
+    private func updateView() {
+        // update data from the API's subscribe
+        // update text
+        // update view
+    }
+    
+    private func setObservable() {
+        viewModel.isDataReady.asObservable().withUnretained(self).subscribe(onNext: { owner, data in
+            owner.updateView()
+        }
     }
 }
