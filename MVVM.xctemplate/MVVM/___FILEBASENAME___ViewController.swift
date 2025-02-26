@@ -5,6 +5,7 @@ import UIKit
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     private let viewModel: ___VARIABLE_productName:identifier___ViewModel = ___VARIABLE_productName:identifier___ViewModel()
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +44,6 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     private func setObservable() {
         viewModel.isDataReady.asObservable().withUnretained(self).subscribe(onNext: { owner, data in
             owner.updateView()
-        }
+        }).disposed(by: disposeBag)
     }
 }
