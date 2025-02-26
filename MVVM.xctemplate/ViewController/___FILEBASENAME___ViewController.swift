@@ -40,7 +40,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
         // update text
         // update view
     }
-    
+
     private func setObservable() {
         viewModel.isDataReady.asObservable().withUnretained(self).subscribe(onNext: { owner, data in
             owner.updateView()
